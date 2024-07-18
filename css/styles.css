@@ -5,25 +5,22 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* Header */
+
 .header-container {
-  background-color: #1f2937;
   height: 500px;
 }
 
 .links {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .links ul {
   display: flex;
-  margin: 10px 0 100px 0;
-}
 
-.links .links-left a {
-  font-size: 24px;
-  font-weight: bold;
+  margin: 10px 0 100px 0;
 }
 
 .links li {
@@ -32,13 +29,12 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .header-left h1 {
-  display: flex;
   font-size: 48px;
 }
 
@@ -46,41 +42,120 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.237);
   width: 600px;
   height: 250px;
-  background-color: gray;
 }
 
 .header-left button {
-  padding: 10px 10px;
   margin: 10px 0;
-  width: 120px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 8px;
+  padding: 10px 10px;
   border: none;
-  background-color: #3882f6;
 }
 
-.links-left a,
-.header-left h1 {
-  color: #f9faf8;
+/* Header */
+
+/* Main/Images */
+
+.main-container > h1 {
+  margin: 1.5em 0 1.5em 0;
+}
+.group-of-images {
+  gap: 52px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
 }
 
-.links-right a,
-.header-left p,
+.img-placeholder {
+  height: 180px;
+  min-width: 180px;
+  border: 4px solid #3882f6;
+  border-radius: 20px;
+}
+
+.text {
+  font-weight: light;
+  margin-top: 10px;
+}
+
+.inspiring-quote {
+  display: flex;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e7eb;
+}
+
+.inspiring-quote h1 {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.inspiring-quote p {
+  text-align: end;
+}
+
+/* Main/Images */
+
+/* Call Action */
+
+.call-action {
+  display: flex;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+.action-items {
+  padding: 50px 120px;
+  border-radius: 10px;
+  width: 1100px;
+}
+.button-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button-text button {
+  border: #e5e7eb 2px solid;
+  padding: 10px;
+}
+
+/* Call Action */
+
+/* Footer */
+
+footer {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+
+/* Grouped all selectors that have the same styling applied so CSS is not as bloated */
+
+.inspiring-quote h1,
+.main-container > h1 {
+  font-size: 36px;
+}
+
+.header-left button,
+.button-text button {
+  width: 120px;
+}
+
+.button-text button,
 .header-left button {
-  color: #e5e7eb;
+  border-radius: 8px;
 }
 
-.links,
-.header {
-  margin: 0 15%;
-}
-
-.header-left p,
-.links-right a {
-  font-size: 18px;
+.header-left button,
+.main-container > h1,
+.text,
+.button-text button {
+  text-align: center;
 }
 
 li,
@@ -89,7 +164,71 @@ a {
   text-decoration: none;
 }
 
+.links,
+.header {
+  margin: 0 15%;
+}
+
+.links-left a,
+.header-left h1,
+.header-right {
+  color: #f9faf8;
+}
+
+.links-right a,
+.header-left p,
 .header-left button,
-.header-left h1 {
+footer,
+.button-text button,
+.action-items,
+.inspiring-quote {
+  color: #e5e7eb;
+}
+
+.header-left p,
+.links-right a {
+  font-size: 18px;
+}
+
+.links,
+.links-left a,
+.inspiring-quote p,
+.action-items > p {
+  font-size: 24px;
+}
+
+.action-items > p,
+.button-text button,
+.inspiring-quote p,
+.links .links-left a {
+  font-weight: bold;
+}
+
+footer,
+.header-container {
+  background-color: #1f2937;
+}
+
+.header-left button,
+.button-text button,
+.action-items {
+  background-color: #3882f6;
+}
+
+.header-left button,
+.header-left h1,
+.main-container > h1 {
   font-weight: bolder;
 }
+
+button {
+  cursor: pointer;
+}
+
+.inspiring-quote p,
+.inspiring-quote h1,
+.main-container > h1 {
+  color: #1f2937;
+}
+
+/* Grouped all selectors that have the same styling applied so CSS is not as bloated */
